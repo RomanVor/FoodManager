@@ -8,7 +8,7 @@ import com.digijed2.android.foodmanager.repository.Commodity
 import com.digijed2.android.foodmanager.repository.CommodityRepository
 
 class CommodityDeleteDialog(val commodity:Commodity): DialogFragment()  {
-
+// Цей діалог підтверджує бажання видалити продукт
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val builder = AlertDialog.Builder(requireContext())
             .setTitle(commodity.name)

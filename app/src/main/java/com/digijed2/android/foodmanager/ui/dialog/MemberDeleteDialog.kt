@@ -11,8 +11,10 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class MemberDeleteDialog(
+
     private val uid: String,
     private var authStateListener: onAuthStateListener? = null): DialogFragment()  {
+// Цей діалог підтверджує бажання видалити користувача із групи
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val builder = AlertDialog.Builder(requireContext())
