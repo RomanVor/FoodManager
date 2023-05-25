@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "726605288590",
+    "firebase_url": "https://foodmanger-b4fe0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "foodmanger-b4fe0",
+    "storage_bucket": "foodmanger-b4fe0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726605288590:android:757390b3b9bfbf31ae65df",
+        "android_client_info": {
+          "package_name": "com.digijed2.android.foodmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726605288590-lfo469bidnlqprgirubunk8u8mbtctll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digijed2.android.foodmanager",
+            "certificate_hash": "30203ccde38783cd9eb4af886391b5a92086a5a6"
+          }
+        },
+        {
+          "client_id": "726605288590-861pugb85kgf2hikk8imjqvlcevi5qiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjv8QFPLX00iw60qfgOYZOlifpusWpiXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726605288590-3elq1tm94nbde0adsu0r4l6f05d44ban.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

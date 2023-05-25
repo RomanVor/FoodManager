@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/commodityName"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="146dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="TextView TextView TextView TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="96dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/decreaseBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/commodityName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/decreaseBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/white"
+        app:fabCustomSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_decrease"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/increaseBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:clickable="true"
+        app:fabCustomSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/amount"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/commodityName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/ic_increase"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:backgroundTint="@color/white"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
