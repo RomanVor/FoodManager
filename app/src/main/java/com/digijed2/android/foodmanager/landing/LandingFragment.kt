@@ -11,7 +11,7 @@ import com.digijed2.android.foodmanager.ui.login.onAuthStateListener
 import com.google.android.material.tabs.TabLayoutMediator
 
 class LandingFragment: Fragment(), onAuthStateListener {
-
+// Цей фрагмент використовується для створення TabLayout
     private lateinit var binding:FragmentLandingBinding
     private var authStateListener: onAuthStateListener? = null
 

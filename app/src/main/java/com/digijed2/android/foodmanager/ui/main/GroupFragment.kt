@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 
 class GroupFragment : Fragment() {
+    // Цей фрагмент відображає користувачів у группі
     private lateinit var binding: FragmentGroupBinding
     private lateinit var adapter: MembersListAdapter
 

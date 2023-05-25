@@ -16,6 +16,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 
 class CommodityShopListFragment : Fragment() {
+    // Цей фрагмент відображає список продуктів кількість яких менше за визначену користувачем мінімальну
     private lateinit var binding: FragmentShopCommodityBinding
     private lateinit var adapter: CommodityShopListAdapter
 

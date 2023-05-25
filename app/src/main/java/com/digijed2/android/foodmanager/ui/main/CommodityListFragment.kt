@@ -14,6 +14,7 @@ import com.digijed2.android.foodmanager.ui.layoutManager.CommodityLayoutManager
 import com.firebase.ui.database.FirebaseRecyclerOptions
 
 class CommodityListFragment : Fragment() {
+    // Цей фрагмент відображає список продуктів що створив користувач
     private lateinit var binding: FragmentCommodityListBinding
     private lateinit var adapter: CommodityListAdapter
 
@@ -26,7 +27,7 @@ class CommodityListFragment : Fragment() {
         binding = FragmentCommodityListBinding.inflate(layoutInflater)
 
         binding.fab.setOnClickListener {
-            AddCommodityFragment()
+            AddEditCommodityFragment()
                 .show(childFragmentManager, "Edit Commodity")
         }
         return binding.root
@@ -46,7 +47,7 @@ class CommodityListFragment : Fragment() {
 
         adapter = CommodityListAdapter(options, object : OnItemClickListener {
             override fun onItemClick(commodity: Commodity) {
-                AddCommodityFragment(commodity)
+                AddEditCommodityFragment(commodity)
                     .show(childFragmentManager, "Edit Commodity")
             }
 

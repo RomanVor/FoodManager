@@ -14,7 +14,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class GroupSelectionFragment : Fragment() {
-
+// Цей фрагмент використовується для заповнення поля groupId у користувачів
+// Користувач може або додатись до існуючої групи або створити нову
+// При додаванні до існуючої групи перевіряється її існування
     private lateinit var binding: FragmentGroupSelectionBinding
     private var authStateListener: onAuthStateListener? = null
 
